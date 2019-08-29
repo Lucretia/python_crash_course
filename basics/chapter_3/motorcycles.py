@@ -5,3 +5,7 @@ print (motorcycles)
 motorcycles.append ('ducati')
 
 print (motorcycles)
+
+motorcycles.insert (0, 'bmw')
+
+print (motorcycles)
