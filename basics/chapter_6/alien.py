@@ -1,7 +1,7 @@
-alien_0 = { 'colour': 'green', 'points': 5 }
+alien_0 = {}
 
-print (alien_0)
-
+alien_0['colour']     = 'green'
+alien_0['points']     = 5
 alien_0['x_position'] = 0
 alien_0['y_position'] = 25
 
