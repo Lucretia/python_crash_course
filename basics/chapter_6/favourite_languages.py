@@ -5,6 +5,6 @@ favourite_languages = {
     'phil':   'python',
 }
 
-print ("Sarah's favourite language is " +
-    favourite_languages['sarah'].title() +
-    ".")
+for name, language in favourite_languages.items():
+    print (name.title() + "'s favourite language is " +
+    language.title() + ".")
