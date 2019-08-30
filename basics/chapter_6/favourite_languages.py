@@ -1,28 +1,15 @@
 favourite_languages = {
-    'jen':    'python',
-    'sarah':  'c',
-    'edward': 'ruby',
-    'phil':   'python',
+    'jen':    [ 'python', 'ruby'],
+    'sarah':  ['c'],
+    'edward': ['ruby', 'go'],
+    'phil':   ['python', 'haskell'],
 }
 
-for name, language in favourite_languages.items():
-    print (name.title() + "'s favourite language is " +
-    language.title() + ".")
+for name, languages in favourite_languages.items():
+    if len (languages) > 1:
+        print ("\n" + name.title() + "'s favourite languages are:")
+    elif len (languages) == 1:
+        print ("\n" + name.title() + "'s favourite language is:")
 
-print ("\nThe people who took the poll are:")
-
-for name in favourite_languages:#.keys():
-    print (name.title())
-
-for name in sorted (favourite_languages):
-    print (name.title() + ", thank you for taking hte poll.")
-
-print ("\nAll the languages (with repeats) in poll are:")
-
-for language in favourite_languages.values():
-    print (language.title())
-
-print ("\nAll the languages in poll are:")
-
-for language in set (favourite_languages.values()):
-    print (language.title())
+    for language in languages:
+        print ("\t" + language.title())
