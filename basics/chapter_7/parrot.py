@@ -1,3 +1,8 @@
-message = input ("ell me something, I'll repeat it back to you: ")
+prompt  = "Tell me something, I'll repeat it back to you: "
+prompt += "\nEnter 'quit' to end the program. "
 
-print (message)
+message = ""
+
+while message != "quit":
+    message = input (prompt)
+    print (message)
